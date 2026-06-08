@@ -13,10 +13,11 @@
             theme: {
                 extend: {
                     colors: {
-                        'obsidian': '#000000',
-                        'module-dark': '#0A0A0A',
+                        'obsidian': '#0A0908',
+                        'module-dark': '#161514',
                         'flag-green': '#008751',
                         'metallic-gold': '#F4BE41',
+                        'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -26,11 +27,18 @@
         }
     </script>
     <style>
-        body { background-color: #000000; color: #FFFFFF; }
-        .brand-asset {
-            /* Invert white background to black and black content to white for visibility on dark canvas */
-            filter: invert(1) contrast(1.1);
+        body { background-color: #0A0908; color: #FFFFFF; }
+        .mask-logo {
+            background-color: #F4BE41;
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
         }
+        .logo-main { -webkit-mask-image: url('Onebloodlabslogo.png'); mask-image: url('Onebloodlabslogo.png'); }
+        .logo-title { -webkit-mask-image: url('Onebloodlabs-compaytitle.png'); mask-image: url('Onebloodlabs-compaytitle.png'); }
     </style>
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col">
@@ -43,15 +51,15 @@
     </header>
 
     <main class="flex-grow flex flex-col items-center justify-center px-8 py-20 text-center">
-        <!-- Large Centered Logo -->
-        <div class="mb-12">
-            <img src="Onebloodlabslogo.png" alt="OneBlood Labs Logo" class="h-48 md:h-64 w-auto brand-asset">
+        <!-- Centered Brand Identity (Masked for Metallic Gold Color) -->
+        <div class="mb-12 w-full flex justify-center">
+            <div class="h-48 md:h-64 w-64 md:w-80 mask-logo logo-main"></div>
         </div>
         
         <div class="max-w-4xl mx-auto">
-            <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs Title" class="h-12 md:h-16 w-auto mx-auto mb-12 brand-asset">
+            <div class="h-12 md:h-16 w-full mask-logo logo-title mb-12"></div>
             
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight text-ice-white">
                 High-trust digital sanctuaries for <span class="text-metallic-gold">multi-generational</span> preservation.
             </h1>
             <p class="text-xl text-white/60 font-light leading-relaxed mb-16">
@@ -62,7 +70,7 @@
             <div class="grid md:grid-cols-3 gap-8 mb-20 text-left">
                 <div class="bg-module-dark border-t-4 border-flag-green p-10 rounded-sm">
                     <h3 class="text-metallic-gold text-xs font-bold uppercase tracking-widest mb-4">The Black Anchor</h3>
-                    <h4 class="text-xl font-bold mb-4">The Strength of Creativity</h4>
+                    <h4 class="text-xl font-bold mb-4 text-ice-white">The Strength of Creativity</h4>
                     <p class="text-white/40 text-sm leading-relaxed">
                         Inspired by our roots, we lean into the resilience and creative grit of human heritage to forge unbreakable digital preservation pipelines.
                     </p>
@@ -70,7 +78,7 @@
 
                 <div class="bg-module-dark border-t-4 border-metallic-gold p-10 rounded-sm">
                     <h3 class="text-metallic-gold text-xs font-bold uppercase tracking-widest mb-4">The Gold Anchor</h3>
-                    <h4 class="text-xl font-bold mb-4">The Wealth of Memory</h4>
+                    <h4 class="text-xl font-bold mb-4 text-ice-white">The Wealth of Memory</h4>
                     <p class="text-white/40 text-sm leading-relaxed">
                         We treat family stories as a global gold standard—protecting the golden, sunlit chapters of your life within a secure digital vault.
                     </p>
@@ -78,7 +86,7 @@
 
                 <div class="bg-module-dark border-t-4 border-flag-green p-10 rounded-sm">
                     <h3 class="text-metallic-gold text-xs font-bold uppercase tracking-widest mb-4">The Green Anchor</h3>
-                    <h4 class="text-xl font-bold mb-4">The Hope of Growth</h4>
+                    <h4 class="text-xl font-bold mb-4 text-ice-white">The Hope of Growth</h4>
                     <p class="text-white/40 text-sm leading-relaxed">
                         We build our architectures to scale across generations, cultivating and preserving multi-year legacy landscapes that never fade.
                     </p>
@@ -87,19 +95,19 @@
 
             <!-- Flagship Product Card -->
             <section class="bg-module-dark border border-white/5 p-12 rounded-sm">
-                <h2 class="text-3xl font-bold mb-6">Our Product Environment</h2>
+                <h2 class="text-3xl font-bold mb-6 text-ice-white">Our Product Environment</h2>
                 <p class="text-white/60 mb-10 max-w-xl mx-auto">Access the flagship implementation of our multi-generational preservation architecture.</p>
-                <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-metallic-gold text-black font-black px-12 py-5 uppercase tracking-[0.2em] hover:bg-white transition-all">
+                <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-metallic-gold text-obsidian font-black px-12 py-5 uppercase tracking-[0.2em] hover:bg-ice-white transition-all">
                     Enter Lifespool.app
                 </a>
             </section>
         </div>
     </main>
 
-    <footer class="p-16 max-w-7xl mx-auto w-full border-t border-white/5 flex flex-col md:row justify-between items-center gap-8">
+    <footer class="p-16 max-w-7xl mx-auto w-full border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
         <div class="text-center md:text-left">
             <p class="text-xs text-white/30 uppercase tracking-widest mb-2">Corporate Inquiry</p>
-            <a href="mailto:support@onebloodlabs.com" class="text-xl hover:text-metallic-gold transition-colors">support@onebloodlabs.com</a>
+            <a href="mailto:support@onebloodlabs.com" class="text-xl text-ice-white hover:text-metallic-gold transition-colors">support@onebloodlabs.com</a>
         </div>
         <div class="text-right text-xs text-white/20 uppercase tracking-[0.3em]">
             &copy; 2026 OneBlood Labs LLC
