@@ -28,23 +28,27 @@
     </script>
     <style>
         body { background-color: #0A0908; color: #FFFFFF; }
+        .logo-centered {
+            mix-blend-mode: multiply;
+            filter: contrast(1.2) brightness(1.1);
+        }
     </style>
 </head>
-<body class="font-sans antialiased">
-    <header class="p-8 max-w-7xl mx-auto flex justify-between items-center border-b border-white/5">
-        <div class="flex items-center">
-            <a href="index.html" class="flex items-center hover:opacity-90 transition-opacity">
-                <img src="Onebloodlabslogo.png" alt="OneBlood Labs Logo" class="h-10 w-auto mr-3">
-                <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs" class="h-6 w-auto hidden sm:block">
-            </a>
-        </div>
+<body class="font-sans antialiased min-h-screen flex flex-col">
+    <header class="p-8 max-w-7xl mx-auto w-full flex justify-end items-center border-b border-white/5">
         <nav class="flex gap-10 text-xs uppercase tracking-[0.2em] font-bold">
             <a href="index.html" class="hover:text-metallic-gold transition-colors">Home</a>
+            <a href="privacy.html" class="text-metallic-gold">Privacy</a>
             <a href="terms.html" class="hover:text-metallic-gold transition-colors">Terms</a>
         </nav>
     </header>
 
     <main class="max-w-4xl mx-auto px-8 py-20">
+        <div class="flex flex-col items-center mb-16">
+            <img src="Onebloodlabslogo.png" alt="OneBlood Labs LLC" class="h-24 w-auto mb-6 logo-centered">
+            <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs" class="h-8 w-auto logo-centered">
+        </div>
+
         <h1 class="text-4xl font-bold mb-4 tracking-tight">Privacy Policy</h1>
         <p class="text-xs text-white/30 uppercase tracking-widest mb-12">Last Updated: June 8, 2026</p>
 
