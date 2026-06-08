@@ -13,11 +13,10 @@
             theme: {
                 extend: {
                     colors: {
-                        'obsidian': '#0A0908',
-                        'module-dark': '#161514',
+                        'obsidian': '#000000',
+                        'module-dark': '#0A0A0A',
                         'flag-green': '#008751',
                         'metallic-gold': '#F4BE41',
-                        'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -27,19 +26,14 @@
         }
     </script>
     <style>
-        body { background-color: #0A0908; color: #FFFFFF; }
-        .logo-centered {
-            mix-blend-mode: multiply;
-            filter: contrast(1.2) brightness(1.1);
+        body { background-color: #000000; color: #FFFFFF; }
+        .brand-asset {
+            /* Invert white background to black and black content to white for visibility on dark canvas */
+            filter: invert(1) contrast(1.1);
         }
-        /* If the logo content is black and background is white, multiply makes it transparent.
-           To see it on obsidian, we might need to invert it, but user said 'make it black'.
-           If they really want it black on obsidian, it's their choice. 
-           I'll add a subtle glow or just trust the 'multiply' is what they mean for transparency. */
     </style>
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col">
-    <!-- Header without logo -->
     <header class="p-8 max-w-7xl mx-auto w-full flex justify-end items-center border-b border-white/5">
         <nav class="flex gap-10 text-xs uppercase tracking-[0.2em] font-bold">
             <a href="index.html" class="text-metallic-gold">Home</a>
@@ -50,13 +44,12 @@
 
     <main class="flex-grow flex flex-col items-center justify-center px-8 py-20 text-center">
         <!-- Large Centered Logo -->
-        <div class="mb-12 relative">
-            <div class="absolute inset-0 bg-metallic-gold/5 blur-3xl rounded-full"></div>
-            <img src="Onebloodlabslogo.png" alt="OneBlood Labs LLC" class="h-48 md:h-64 w-auto relative z-10 logo-centered">
+        <div class="mb-12">
+            <img src="Onebloodlabslogo.png" alt="OneBlood Labs Logo" class="h-48 md:h-64 w-auto brand-asset">
         </div>
         
         <div class="max-w-4xl mx-auto">
-            <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs" class="h-12 md:h-16 w-auto mx-auto mb-12 logo-centered">
+            <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs Title" class="h-12 md:h-16 w-auto mx-auto mb-12 brand-asset">
             
             <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
                 High-trust digital sanctuaries for <span class="text-metallic-gold">multi-generational</span> preservation.
@@ -96,14 +89,14 @@
             <section class="bg-module-dark border border-white/5 p-12 rounded-sm">
                 <h2 class="text-3xl font-bold mb-6">Our Product Environment</h2>
                 <p class="text-white/60 mb-10 max-w-xl mx-auto">Access the flagship implementation of our multi-generational preservation architecture.</p>
-                <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-metallic-gold text-obsidian font-black px-12 py-5 uppercase tracking-[0.2em] hover:bg-white transition-all">
+                <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-metallic-gold text-black font-black px-12 py-5 uppercase tracking-[0.2em] hover:bg-white transition-all">
                     Enter Lifespool.app
                 </a>
             </section>
         </div>
     </main>
 
-    <footer class="p-16 max-w-7xl mx-auto w-full border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+    <footer class="p-16 max-w-7xl mx-auto w-full border-t border-white/5 flex flex-col md:row justify-between items-center gap-8">
         <div class="text-center md:text-left">
             <p class="text-xs text-white/30 uppercase tracking-widest mb-2">Corporate Inquiry</p>
             <a href="mailto:support@onebloodlabs.com" class="text-xl hover:text-metallic-gold transition-colors">support@onebloodlabs.com</a>

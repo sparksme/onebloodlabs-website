@@ -13,11 +13,10 @@
             theme: {
                 extend: {
                     colors: {
-                        'obsidian': '#0A0908',
-                        'module-dark': '#161514',
+                        'obsidian': '#000000',
+                        'module-dark': '#0A0A0A',
                         'flag-green': '#008751',
                         'metallic-gold': '#F4BE41',
-                        'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -27,10 +26,9 @@
         }
     </script>
     <style>
-        body { background-color: #0A0908; color: #FFFFFF; }
-        .logo-centered {
-            mix-blend-mode: multiply;
-            filter: contrast(1.2) brightness(1.1);
+        body { background-color: #000000; color: #FFFFFF; }
+        .brand-asset {
+            filter: invert(1) contrast(1.1);
         }
     </style>
 </head>
@@ -45,8 +43,8 @@
 
     <main class="max-w-4xl mx-auto px-8 py-20">
         <div class="flex flex-col items-center mb-16">
-            <img src="Onebloodlabslogo.png" alt="OneBlood Labs LLC" class="h-24 w-auto mb-6 logo-centered">
-            <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs" class="h-8 w-auto logo-centered">
+            <img src="Onebloodlabslogo.png" alt="OneBlood Labs Logo" class="h-24 w-auto mb-6 brand-asset">
+            <img src="Onebloodlabs-compaytitle.png" alt="OneBlood Labs Title" class="h-8 w-auto brand-asset">
         </div>
 
         <h1 class="text-4xl font-bold mb-4 tracking-tight">Privacy Policy</h1>
