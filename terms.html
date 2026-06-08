@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -20,6 +20,7 @@
                         'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
+                        serif: ['Baskervville', 'serif'],
                         sans: ['Inter', 'sans-serif'],
                     }
                 }
@@ -47,8 +48,8 @@
             <img src="Onebloodlabslogo-removebg-preview.png" alt="OneBlood Labs LLC" class="h-32 w-auto mb-6">
         </div>
 
-        <h1 class="text-4xl font-bold mb-4 tracking-tight text-ice-white">Terms of Service</h1>
-        <p class="text-xs text-white/30 uppercase tracking-widest mb-12">Last Updated: June 8, 2026</p>
+        <h1 class="font-serif text-4xl font-normal mb-4 tracking-tight text-ice-white italic text-center">Terms of Service</h1>
+        <p class="text-xs text-white/30 uppercase tracking-widest mb-12 text-center">Last Updated: June 8, 2026</p>
 
         <section class="space-y-12 text-ice-white">
             <div class="bg-module-dark p-10 rounded-2xl border border-white/5">
@@ -70,9 +71,11 @@
                 </ul>
             </div>
 
-            <div class="bg-module-dark p-10 rounded-2xl border border-white/5 text-center">
-                <p class="text-white/40 text-xs uppercase tracking-widest mb-4">Contractual Inquiry</p>
-                <a href="mailto:support@onebloodlabs.com" class="text-xl text-metallic-gold hover:text-white transition-colors">support@onebloodlabs.com</a>
+            <div class="bg-module-dark p-10 rounded-2xl border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">3. Technical Limitations</h2>
+                <p class="text-white/70 leading-relaxed">
+                    While OneBlood Labs LLC utilizes S3 Encrypted Storage and high-availability clusters, digital preservation is an ongoing engineering challenge. We do not guarantee compatibility with all future file formats over an infinite timeline, but we commit to maintaining the underlying bit-level integrity of all preserved objects.
+                </p>
             </div>
         </section>
     </main>

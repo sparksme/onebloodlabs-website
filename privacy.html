@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -20,6 +20,7 @@
                         'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
+                        serif: ['Baskervville', 'serif'],
                         sans: ['Inter', 'sans-serif'],
                     }
                 }
@@ -47,8 +48,8 @@
             <img src="Onebloodlabslogo-removebg-preview.png" alt="OneBlood Labs LLC" class="h-32 w-auto mb-6">
         </div>
 
-        <h1 class="text-4xl font-bold mb-4 tracking-tight text-ice-white">Privacy Policy</h1>
-        <p class="text-xs text-white/30 uppercase tracking-widest mb-12">Last Updated: June 8, 2026</p>
+        <h1 class="font-serif text-4xl font-normal mb-4 tracking-tight text-ice-white italic text-center">Privacy Policy</h1>
+        <p class="text-xs text-white/30 uppercase tracking-widest mb-12 text-center">Last Updated: June 8, 2026</p>
 
         <section class="space-y-12">
             <div class="bg-module-dark border-l-2 border-flag-green p-8 rounded-2xl">
@@ -67,22 +68,17 @@
 
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-module-dark p-8 border border-white/5 rounded-2xl">
-                    <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Zero-Monetization</h3>
+                    <h3 class="font-serif text-white text-lg mb-4">Zero-Monetization</h3>
                     <p class="text-white/50 text-sm">
                         OneBlood Labs LLC maintains a hardline stance against data monetization. We do not sell, license, or trade user data for advertising purposes.
                     </p>
                 </div>
                 <div class="bg-module-dark p-8 border border-white/5 rounded-2xl">
-                    <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">AI Disclosure</h3>
+                    <h3 class="font-serif text-white text-lg mb-4">AI Disclosure</h3>
                     <p class="text-white/50 text-sm">
                         While we utilize third-party AI APIs (Anthropic/OpenAI) for processing, we do not authorize these providers to use customer media for general model training.
                     </p>
                 </div>
-            </div>
-
-            <div class="text-center pt-12">
-                <p class="text-white/40 text-sm mb-4 tracking-wide">For legal inquiries or data requests:</p>
-                <a href="mailto:support@onebloodlabs.com" class="text-metallic-gold font-bold hover:underline decoration-flag-green decoration-2 underline-offset-8">support@onebloodlabs.com</a>
             </div>
         </section>
     </main>
