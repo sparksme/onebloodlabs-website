@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneBlood Labs LLC | Digital Sanctuaries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        parchment: '#FDFBF7',
+                        sepia: '#9E7C64',
+                        peach: '#FAD2B4',
+                        terracotta: '#BC6D5D',
+                    },
+                    fontFamily: {
+                        serif: ['Crimson Pro', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FDFBF7; }
+    </style>
+</head>
+<body class="font-sans text-sepia leading-relaxed">
+    <header class="p-6 md:p-12 max-w-7xl mx-auto w-full flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <!-- Continuous Line Spool Infinity Heart Logo -->
+            <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-terracotta">
+                <path d="M50 35C50 35 45 25 35 25C25 25 20 33 20 40C20 55 50 75 50 75C50 75 80 55 80 40C80 33 75 25 65 25C55 25 50 35 50 35Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M30 40C30 30 40 20 50 20C60 20 70 30 70 40C70 50 60 60 50 60C40 60 30 50 30 40Z" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 4"/>
+                <path d="M20 30L20 70M80 30L80 70M35 15H65M35 85H65" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <span class="font-serif text-2xl font-semibold tracking-tight">OneBlood Labs LLC</span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-semibold">
+            <a href="privacy.html" class="hover:text-terracotta transition-colors">Privacy</a>
+            <a href="terms.html" class="hover:text-terracotta transition-colors">Terms</a>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-24 text-center">
+        <h1 class="font-serif text-4xl md:text-6xl mb-8 leading-tight">
+            We design and engineer high-trust digital sanctuaries for long-term multi-generational preservation.
+        </h1>
+        
+        <p class="text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto">
+            Our mission is to safeguard family legacies through resilient technology, ensuring that your most precious digital assets remain private, secure, and accessible for generations to come.
+        </p>
+
+        <div class="bg-white/50 border border-terracotta/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm shadow-xl shadow-sepia/5">
+            <h2 class="font-serif text-2xl md:text-3xl mb-6">Our Premier Application</h2>
+            <p class="mb-8 text-sepia/80">Experience the flagship platform built on our sanctuary architecture.</p>
+            <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-peach text-sepia font-semibold px-8 py-4 rounded-full hover:bg-terracotta hover:text-white transition-all transform hover:scale-105 shadow-lg">
+                Visit lifespool.app
+            </a>
+        </div>
+    </main>
+
+    <footer class="max-w-7xl mx-auto p-12 mt-12 border-t border-terracotta/10">
+        <div class="grid md:grid-cols-2 gap-12 items-end">
+            <div>
+                <p class="text-sm font-semibold uppercase tracking-widest mb-4">Support & Inquiry</p>
+                <a href="mailto:support@onebloodlabs.com" class="text-xl md:text-2xl font-serif hover:text-terracotta transition-colors underline decoration-terracotta/30">
+                    support@onebloodlabs.com
+                </a>
+            </div>
+            <div class="md:text-right text-sm opacity-60">
+                <p>&copy; 2026 OneBlood Labs LLC. All rights reserved.</p>
+                <div class="mt-2 flex md:justify-end gap-4">
+                    <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+                    <a href="terms.html" class="hover:underline">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
