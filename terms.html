@@ -7,20 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'jamaica-green': '#007749',
-                        'jamaica-gold': '#FFB81C',
-                        'jamaica-red': '#CE1126',
-                        'deep-charcoal': '#1A1A1A',
-                        'warm-sand': '#F5F2EA',
+                        'obsidian': '#0A0908',
+                        'module-dark': '#161514',
+                        'flag-green': '#008751',
+                        'metallic-gold': '#F4BE41',
+                        'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
-                        serif: ['Crimson Pro', 'serif'],
                         sans: ['Inter', 'sans-serif'],
                     }
                 }
@@ -28,60 +27,64 @@
         }
     </script>
     <style>
-        body { background-color: #F5F2EA; }
+        body { background-color: #0A0908; color: #FFFFFF; }
     </style>
 </head>
-<body class="font-sans text-deep-charcoal leading-relaxed">
-    <header class="p-6 md:p-12 max-w-7xl mx-auto w-full flex justify-between items-center">
-        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <!-- Continuous Line Spool Infinity Heart Logo -->
-            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-jamaica-green">
-                <path d="M50 35C50 35 45 25 35 25C25 25 20 33 20 40C20 55 50 75 50 75C50 75 80 55 80 40C80 33 75 25 65 25C55 25 50 35 50 35Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M30 40C30 30 40 20 50 20C60 20 70 30 70 40C70 50 60 60 50 60C40 60 30 50 30 40Z" stroke="#FFB81C" stroke-width="2.5" stroke-dasharray="2 4"/>
-                <path d="M20 30L20 70M80 30L80 70M35 15H65M35 85H65" stroke="#CE1126" stroke-width="3" stroke-linecap="round"/>
+<body class="font-sans antialiased">
+    <header class="p-8 max-w-7xl mx-auto flex justify-between items-center border-b border-white/5">
+        <a href="index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <svg width="240" height="40" viewBox="0 0 240 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20C10 11.7157 16.7157 5 25 5C33.2843 5 40 11.7157 40 20C40 28.2843 33.2843 35 25 35" stroke="#008751" stroke-width="3" stroke-linecap="round"/>
+                <path d="M25 5C16.7157 5 10 11.7157 10 20C10 28.2843 16.7157 35 25 35C33.2843 35 40 28.2843 40 20" stroke="#F4BE41" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 4"/>
+                <text x="50" y="27" fill="#FFFFFF" style="font: bold 22px 'Inter', sans-serif;">OneBlood Labs</text>
             </svg>
-            <span class="font-serif text-xl font-bold tracking-tight text-jamaica-green">OneBlood Labs LLC</span>
         </a>
-        <nav class="flex gap-8 text-sm uppercase tracking-widest font-bold">
-            <a href="index.html" class="hover:text-jamaica-red transition-colors">Home</a>
-            <a href="privacy.html" class="hover:text-jamaica-red transition-colors">Privacy</a>
+        <nav class="flex gap-10 text-xs uppercase tracking-[0.2em] font-bold">
+            <a href="index.html" class="hover:text-metallic-gold transition-colors">Home</a>
+            <a href="privacy.html" class="hover:text-metallic-gold transition-colors">Privacy</a>
         </nav>
     </header>
 
-    <main class="max-w-3xl mx-auto px-6 py-12">
-        <h1 class="font-serif text-4xl mb-8 font-bold border-b-4 border-jamaica-red pb-2 inline-block">Terms of Service</h1>
-        <p class="mb-8 text-sm opacity-60">Last Updated: June 8, 2026</p>
+    <main class="max-w-4xl mx-auto px-8 py-20">
+        <h1 class="text-4xl font-bold mb-4 tracking-tight">Terms of Service</h1>
+        <p class="text-xs text-white/30 uppercase tracking-widest mb-12">Last Updated: June 8, 2026</p>
 
-        <section class="space-y-8 text-deep-charcoal/90">
-            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-jamaica-gold">
-                <h2 class="font-serif text-2xl mb-4 text-deep-charcoal font-bold">1. Acceptance of Terms</h2>
-                <p>By accessing or using the services provided by OneBlood Labs LLC you agree to be bound by these Terms of Service. Our mission is built on mutual respect and the "One Love" philosophy.</p>
+        <section class="space-y-12">
+            <div class="bg-module-dark p-10 rounded-sm border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">1. Acceptance of Terms</h2>
+                <p class="text-white/70 leading-relaxed">
+                    By engaging with the engineering services of OneBlood Labs LLC you agree to be bound by these Terms of Service. These terms constitute a legally binding agreement between you and OneBlood Labs LLC regarding the use of our multi-generational preservation infrastructure.
+                </p>
             </div>
 
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">2. The Sanctuary & Third-Party AI</h2>
-                <p>OneBlood Labs LLC provides high-trust digital environments. You acknowledge that our services utilize advanced AI processing from third-party providers (including but not limited to Anthropic and OpenAI). While we facilitate these connections through secure channels, you accept the inherent nature of using external AI infrastructure for legacy preservation.</p>
+            <div class="bg-module-dark p-10 rounded-sm border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">2. Infrastructure Governance</h2>
+                <p class="text-white/70 leading-relaxed mb-4">
+                    OneBlood Labs LLC provides a resilient technological framework. Users are responsible for the integrity of the data they ingest into the sanctuary environment.
+                </p>
+                <ul class="text-white/50 text-sm space-y-3 list-disc pl-5">
+                    <li>Data sovereignty remains with the originating user.</li>
+                    <li>Infrastructure access is governed by enterprise-grade IAM protocols.</li>
+                    <li>Multi-region redundancy is employed for disaster recovery.</li>
+                </ul>
             </div>
 
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">3. User Conduct & Legacy Content</h2>
-                <p>Users retain all ownership rights to the content they upload. OneBlood Labs LLC does not claim any license to your family photos or data beyond what is strictly necessary to provide and enhance the service for you. You agree to use the service in the spirit of community and legality.</p>
+            <div class="bg-module-dark p-10 rounded-sm border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">3. Technical Limitations</h2>
+                <p class="text-white/70 leading-relaxed">
+                    While OneBlood Labs LLC utilizes S3 Encrypted Storage and high-availability clusters, digital preservation is an ongoing engineering challenge. We do not guarantee compatibility with all future file formats over an infinite timeline, but we commit to maintaining the underlying bit-level integrity of all preserved objects.
+                </p>
             </div>
 
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">4. Limitation of Liability</h2>
-                <p>OneBlood Labs LLC provides services on an "as-is" basis. While we employ resilient security and preservation techniques, we cannot guarantee against all forms of digital data loss or the internal processing outcomes of third-party AI partners. We strongly encourage maintaining secondary backups.</p>
-            </div>
-
-            <div class="mt-12 p-6 bg-jamaica-green/5 rounded-xl border border-jamaica-green/20">
-                <h2 class="font-serif text-2xl mb-4 font-bold text-jamaica-green">5. Contact</h2>
-                <p>Questions about these terms? Connect with us at <a href="mailto:support@onebloodlabs.com" class="font-bold underline decoration-jamaica-red hover:text-jamaica-red transition-colors">support@onebloodlabs.com</a>.</p>
+            <div class="bg-module-dark p-10 rounded-sm border border-white/5 text-center">
+                <p class="text-white/40 text-xs uppercase tracking-widest mb-4">Contractual Inquiry</p>
+                <a href="mailto:support@onebloodlabs.com" class="text-xl text-metallic-gold hover:text-white transition-colors">support@onebloodlabs.com</a>
             </div>
         </section>
     </main>
 
-    <footer class="max-w-7xl mx-auto p-12 mt-12 border-t border-jamaica-gold/30 text-center text-sm opacity-60">
-        <p>&copy; 2026 OneBlood Labs LLC. Built with heart and soul.</p>
+    <footer class="p-16 max-w-7xl mx-auto border-t border-white/5 text-center text-xs text-white/20 uppercase tracking-[0.3em]">
+        &copy; 2026 OneBlood Labs LLC
     </footer>
 </body>
 </html>

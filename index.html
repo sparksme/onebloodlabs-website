@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneBlood Labs LLC | Digital Sanctuaries</title>
+    <title>OneBlood Labs LLC | Premium Engineering Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'jamaica-green': '#007749',
-                        'jamaica-gold': '#FFB81C',
-                        'jamaica-red': '#CE1126',
-                        'deep-charcoal': '#1A1A1A',
-                        'warm-sand': '#F5F2EA',
+                        'obsidian': '#0A0908',
+                        'module-dark': '#161514',
+                        'flag-green': '#008751',
+                        'metallic-gold': '#F4BE41',
+                        'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
-                        serif: ['Crimson Pro', 'serif'],
                         sans: ['Inter', 'sans-serif'],
                     }
                 }
@@ -28,62 +27,90 @@
         }
     </script>
     <style>
-        body { background-color: #F5F2EA; }
+        body { background-color: #0A0908; color: #FFFFFF; }
+        .border-green { border-color: #008751; }
+        .text-gold { color: #F4BE41; }
     </style>
 </head>
-<body class="font-sans text-deep-charcoal leading-relaxed">
-    <header class="p-6 md:p-12 max-w-7xl mx-auto w-full flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <!-- Continuous Line Spool Infinity Heart Logo -->
-            <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-jamaica-green">
-                <path d="M50 35C50 35 45 25 35 25C25 25 20 33 20 40C20 55 50 75 50 75C50 75 80 55 80 40C80 33 75 25 65 25C55 25 50 35 50 35Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M30 40C30 30 40 20 50 20C60 20 70 30 70 40C70 50 60 60 50 60C40 60 30 50 30 40Z" stroke="#FFB81C" stroke-width="2.5" stroke-dasharray="2 4"/>
-                <path d="M20 30L20 70M80 30L80 70M35 15H65M35 85H65" stroke="#CE1126" stroke-width="3" stroke-linecap="round"/>
+<body class="font-sans antialiased">
+    <header class="p-8 max-w-7xl mx-auto flex justify-between items-center border-b border-white/5">
+        <div class="flex items-center gap-4">
+            <!-- OneBlood Labs Corporate Mark -->
+            <svg width="240" height="40" viewBox="0 0 240 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20C10 11.7157 16.7157 5 25 5C33.2843 5 40 11.7157 40 20C40 28.2843 33.2843 35 25 35" stroke="#008751" stroke-width="3" stroke-linecap="round"/>
+                <path d="M25 5C16.7157 5 10 11.7157 10 20C10 28.2843 16.7157 35 25 35C33.2843 35 40 28.2843 40 20" stroke="#F4BE41" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 4"/>
+                <text x="50" y="27" fill="#FFFFFF" style="font: bold 22px 'Inter', sans-serif;">OneBlood Labs</text>
             </svg>
-            <span class="font-serif text-2xl font-bold tracking-tight text-jamaica-green">OneBlood Labs LLC</span>
         </div>
-        <nav class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-bold">
-            <a href="privacy.html" class="hover:text-jamaica-red transition-colors border-b-2 border-transparent hover:border-jamaica-gold">Privacy</a>
-            <a href="terms.html" class="hover:text-jamaica-red transition-colors border-b-2 border-transparent hover:border-jamaica-gold">Terms</a>
+        <nav class="hidden md:flex gap-10 text-xs uppercase tracking-[0.2em] font-bold">
+            <a href="privacy.html" class="hover:text-metallic-gold transition-colors">Privacy</a>
+            <a href="terms.html" class="hover:text-metallic-gold transition-colors">Terms</a>
         </nav>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12 md:py-24 text-center">
-        <div class="mb-6 inline-block bg-jamaica-gold/20 text-jamaica-green px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase">
-            One Love • One Heart • OneBlood
-        </div>
-        <h1 class="font-serif text-4xl md:text-6xl mb-8 leading-tight font-bold">
-            We design and engineer high-trust digital sanctuaries for long-term multi-generational preservation.
-        </h1>
-        
-        <p class="text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto opacity-80">
-            Rooted in the spirit of togetherness, we safeguard family legacies through resilient technology, ensuring your precious memories remain vibrant for generations to come.
-        </p>
+    <main class="max-w-7xl mx-auto px-8 py-20">
+        <section class="mb-32 text-center max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
+                High-trust digital sanctuaries for <span class="text-metallic-gold">multi-generational</span> preservation.
+            </h1>
+            <p class="text-xl text-white/60 font-light leading-relaxed">
+                OneBlood Labs LLC engineers resilient architectures that bridge the gap between creative heritage and long-term data security.
+            </p>
+        </section>
 
-        <div class="bg-white border-l-8 border-jamaica-green rounded-2xl p-8 md:p-12 shadow-2xl shadow-jamaica-green/10">
-            <h2 class="font-serif text-2xl md:text-3xl mb-6 text-jamaica-green font-bold">Our Premier Application</h2>
-            <p class="mb-8 opacity-70">Experience the flagship platform built on our Jamaican-inspired sanctuary architecture.</p>
-            <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-jamaica-green text-white font-bold px-10 py-4 rounded-xl hover:bg-jamaica-red hover:shadow-jamaica-red/20 transition-all transform hover:-translate-y-1 shadow-lg border-b-4 border-black/20">
-                Visit lifespool.app
-            </a>
+        <!-- The Three Pillars Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-32">
+            <div class="bg-module-dark border-t-4 border-green p-10 rounded-sm">
+                <div class="w-12 h-12 bg-black border border-white/10 mb-6 flex items-center justify-center">
+                    <div class="w-4 h-4 bg-white rounded-full"></div>
+                </div>
+                <h3 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-4">The Black Anchor</h3>
+                <h4 class="text-2xl font-bold mb-4">The Strength of Creativity</h4>
+                <p class="text-white/50 leading-relaxed">
+                    Inspired by our roots, we lean into the resilience and creative grit of human heritage to forge unbreakable digital preservation pipelines.
+                </p>
+            </div>
+
+            <div class="bg-module-dark border-t-4 border-metallic-gold p-10 rounded-sm">
+                <div class="w-12 h-12 bg-black border border-white/10 mb-6 flex items-center justify-center text-metallic-gold italic font-bold">
+                    $
+                </div>
+                <h3 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-4">The Gold Anchor</h3>
+                <h4 class="text-2xl font-bold mb-4">The Wealth of Memory</h4>
+                <p class="text-white/50 leading-relaxed">
+                    We treat family stories as a global gold standard—protecting the golden, sunlit chapters of your life within a secure digital vault.
+                </p>
+            </div>
+
+            <div class="bg-module-dark border-t-4 border-green p-10 rounded-sm">
+                <div class="w-12 h-12 bg-black border border-white/10 mb-6 flex items-center justify-center">
+                    <div class="w-4 h-8 bg-flag-green rotate-45"></div>
+                </div>
+                <h3 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-4">The Green Anchor</h3>
+                <h4 class="text-2xl font-bold mb-4">The Hope of Growth</h4>
+                <p class="text-white/50 leading-relaxed">
+                    We build our architectures to scale across generations, cultivating and preserving multi-year legacy landscapes that never fade.
+                </p>
+            </div>
         </div>
+
+        <!-- Flagship Product Card -->
+        <section class="bg-module-dark border border-white/5 p-12 rounded-sm text-center">
+            <h2 class="text-3xl font-bold mb-6">Our Product Environment</h2>
+            <p class="text-white/60 mb-10 max-w-xl mx-auto">Access the flagship implementation of our multi-generational preservation architecture.</p>
+            <a href="https://lifespool.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-metallic-gold text-obsidian font-black px-12 py-5 uppercase tracking-[0.2em] hover:bg-white transition-all">
+                Enter Lifespool.app
+            </a>
+        </section>
     </main>
 
-    <footer class="max-w-7xl mx-auto p-12 mt-12 border-t border-jamaica-gold/30">
-        <div class="grid md:grid-cols-2 gap-12 items-end">
-            <div>
-                <p class="text-sm font-bold uppercase tracking-widest mb-4 text-jamaica-green">Support & Connection</p>
-                <a href="mailto:support@onebloodlabs.com" class="text-xl md:text-2xl font-serif hover:text-jamaica-red transition-colors underline decoration-jamaica-gold decoration-2 underline-offset-4">
-                    support@onebloodlabs.com
-                </a>
-            </div>
-            <div class="md:text-right text-sm opacity-60">
-                <p>&copy; 2026 OneBlood Labs LLC. Built with heart.</p>
-                <div class="mt-2 flex md:justify-end gap-4">
-                    <a href="privacy.html" class="hover:text-jamaica-green hover:underline">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-jamaica-green hover:underline">Terms of Service</a>
-                </div>
-            </div>
+    <footer class="p-16 max-w-7xl mx-auto border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="text-center md:text-left">
+            <p class="text-xs text-white/30 uppercase tracking-widest mb-2">Corporate Inquiry</p>
+            <a href="mailto:support@onebloodlabs.com" class="text-xl hover:text-metallic-gold transition-colors">support@onebloodlabs.com</a>
+        </div>
+        <div class="text-right text-xs text-white/20 uppercase tracking-[0.3em]">
+            &copy; 2026 OneBlood Labs LLC
         </div>
     </footer>
 </body>

@@ -7,20 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'jamaica-green': '#007749',
-                        'jamaica-gold': '#FFB81C',
-                        'jamaica-red': '#CE1126',
-                        'deep-charcoal': '#1A1A1A',
-                        'warm-sand': '#F5F2EA',
+                        'obsidian': '#0A0908',
+                        'module-dark': '#161514',
+                        'flag-green': '#008751',
+                        'metallic-gold': '#F4BE41',
+                        'ice-white': '#FFFFFF',
                     },
                     fontFamily: {
-                        serif: ['Crimson Pro', 'serif'],
                         sans: ['Inter', 'sans-serif'],
                     }
                 }
@@ -28,70 +27,67 @@
         }
     </script>
     <style>
-        body { background-color: #F5F2EA; }
+        body { background-color: #0A0908; color: #FFFFFF; }
     </style>
 </head>
-<body class="font-sans text-deep-charcoal leading-relaxed">
-    <header class="p-6 md:p-12 max-w-7xl mx-auto w-full flex justify-between items-center">
-        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <!-- Continuous Line Spool Infinity Heart Logo -->
-            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-jamaica-green">
-                <path d="M50 35C50 35 45 25 35 25C25 25 20 33 20 40C20 55 50 75 50 75C50 75 80 55 80 40C80 33 75 25 65 25C55 25 50 35 50 35Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M30 40C30 30 40 20 50 20C60 20 70 30 70 40C70 50 60 60 50 60C40 60 30 50 30 40Z" stroke="#FFB81C" stroke-width="2.5" stroke-dasharray="2 4"/>
-                <path d="M20 30L20 70M80 30L80 70M35 15H65M35 85H65" stroke="#CE1126" stroke-width="3" stroke-linecap="round"/>
+<body class="font-sans antialiased">
+    <header class="p-8 max-w-7xl mx-auto flex justify-between items-center border-b border-white/5">
+        <a href="index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <svg width="240" height="40" viewBox="0 0 240 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20C10 11.7157 16.7157 5 25 5C33.2843 5 40 11.7157 40 20C40 28.2843 33.2843 35 25 35" stroke="#008751" stroke-width="3" stroke-linecap="round"/>
+                <path d="M25 5C16.7157 5 10 11.7157 10 20C10 28.2843 16.7157 35 25 35C33.2843 35 40 28.2843 40 20" stroke="#F4BE41" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 4"/>
+                <text x="50" y="27" fill="#FFFFFF" style="font: bold 22px 'Inter', sans-serif;">OneBlood Labs</text>
             </svg>
-            <span class="font-serif text-xl font-bold tracking-tight text-jamaica-green">OneBlood Labs LLC</span>
         </a>
-        <nav class="flex gap-8 text-sm uppercase tracking-widest font-bold">
-            <a href="index.html" class="hover:text-jamaica-red transition-colors">Home</a>
-            <a href="terms.html" class="hover:text-jamaica-red transition-colors">Terms</a>
+        <nav class="flex gap-10 text-xs uppercase tracking-[0.2em] font-bold">
+            <a href="index.html" class="hover:text-metallic-gold transition-colors">Home</a>
+            <a href="terms.html" class="hover:text-metallic-gold transition-colors">Terms</a>
         </nav>
     </header>
 
-    <main class="max-w-3xl mx-auto px-6 py-12">
-        <h1 class="font-serif text-4xl mb-8 font-bold border-b-4 border-jamaica-gold pb-2 inline-block">Privacy Policy</h1>
-        <p class="mb-8 text-sm opacity-60">Last Updated: June 8, 2026</p>
+    <main class="max-w-4xl mx-auto px-8 py-20">
+        <h1 class="text-4xl font-bold mb-4 tracking-tight">Privacy Policy</h1>
+        <p class="text-xs text-white/30 uppercase tracking-widest mb-12">Last Updated: June 8, 2026</p>
 
-        <section class="space-y-8">
-            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-jamaica-green">
-                <h2 class="font-serif text-2xl mb-4 text-jamaica-green font-bold">Our Philosophy</h2>
-                <p>At OneBlood Labs LLC we are guided by the principle of "One Love"—respecting the sanctity of your family's digital legacy. We strive to provide a secure sanctuary for your memories while being transparent about the technology that powers our innovations.</p>
+        <section class="space-y-12">
+            <div class="bg-module-dark border-l-2 border-flag-green p-8">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-4">Enterprise Data Isolation</h2>
+                <p class="text-white/70 leading-relaxed">
+                    OneBlood Labs LLC enforces strict data isolation protocols. Every customer environment is logically segmented within our architecture to prevent cross-contamination and ensure the highest tier of multi-generational security.
+                </p>
             </div>
 
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">Advanced Processing & AI Disclosure</h2>
-                <p class="mb-4">To provide high-trust digital sanctuary features, OneBlood Labs LLC utilizes industry-leading artificial intelligence services. This includes integration with third-party APIs provided by **Anthropic** and **OpenAI**.</p>
-                <p>While we implement strict internal protocols to protect your data during these interactions, users should be aware that processing occurs via these third-party platforms. We operate under commercial agreements designed to maximize data privacy, but we do not maintain direct physical control over the infrastructure of these external AI providers.</p>
+            <div class="bg-module-dark border-l-2 border-metallic-gold p-8">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-4">S3 Encrypted Storage Parameters</h2>
+                <p class="text-white/70 leading-relaxed">
+                    All binary objects and family media are persisted using AWS S3 with industry-standard AES-256 server-side encryption. We maintain rigorous lifecycle policies to ensure data durability and availability across decades.
+                </p>
             </div>
 
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">Zero-Monetization Tracking</h2>
-                <p>OneBlood Labs LLC maintains a strict zero-monetization policy. We do not sell, rent, or trade your personal data to third parties for advertising. Our use of external technology is focused solely on enhancing the preservation and accessibility of your family legacy.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-module-dark p-8 border border-white/5">
+                    <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Zero-Monetization</h3>
+                    <p class="text-white/50 text-sm">
+                        OneBlood Labs LLC maintains a hardline stance against data monetization. We do not sell, license, or trade user data for advertising purposes.
+                    </p>
+                </div>
+                <div class="bg-module-dark p-8 border border-white/5">
+                    <h3 class="text-white text-xs font-bold uppercase tracking-widest mb-4">AI Disclosure</h3>
+                    <p class="text-white/50 text-sm">
+                        While we utilize third-party AI APIs (Anthropic/OpenAI) for processing, we do not authorize these providers to use customer media for general model training.
+                    </p>
+                </div>
             </div>
 
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">Media Management</h2>
-                <p>Your family photos and videos are processed to ensure longevity and discoverability. When media is processed through our AI partners, it is done so under strict API-level privacy terms. We do not authorize our partners to use your family's unique media for general model training beyond the scope of providing our specific services to you.</p>
-            </div>
-
-            <div>
-                <h2 class="font-serif text-2xl mb-4 font-bold">Data Safety Standards</h2>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li>Encrypted data transmission for all interactions.</li>
-                    <li>No third-party behavioral tracking or "ad-tech" scripts.</li>
-                    <li>User-centric data ownership and retention policies.</li>
-                </ul>
-            </div>
-
-            <div class="mt-12 p-6 bg-jamaica-gold/10 rounded-xl border border-jamaica-gold/30 text-center">
-                <h2 class="font-serif text-2xl mb-4 font-bold">Questions?</h2>
-                <p>Reach out to our compliance team at <a href="mailto:support@onebloodlabs.com" class="font-bold underline decoration-jamaica-red hover:text-jamaica-red transition-colors">support@onebloodlabs.com</a>.</p>
+            <div class="text-center pt-12">
+                <p class="text-white/40 text-sm mb-4 tracking-wide">For legal inquiries or data requests:</p>
+                <a href="mailto:support@onebloodlabs.com" class="text-metallic-gold font-bold hover:underline decoration-flag-green decoration-2 underline-offset-8">support@onebloodlabs.com</a>
             </div>
         </section>
     </main>
 
-    <footer class="max-w-7xl mx-auto p-12 mt-12 border-t border-jamaica-gold/30 text-center text-sm opacity-60">
-        <p>&copy; 2026 OneBlood Labs LLC. One Love.</p>
+    <footer class="p-16 max-w-7xl mx-auto border-t border-white/5 text-center text-xs text-white/20 uppercase tracking-[0.3em]">
+        &copy; 2026 OneBlood Labs LLC
     </footer>
 </body>
 </html>
