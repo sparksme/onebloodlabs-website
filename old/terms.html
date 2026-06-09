@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | OneBlood Labs LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'obsidian': '#0A0908',
+                        'module-dark': '#161514',
+                        'flag-green': '#008751',
+                        'metallic-gold': '#F4BE41',
+                        'ice-white': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        serif: ['Baskervville', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0A0908; color: #FFFFFF; }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col">
+    <header class="p-8 max-w-7xl mx-auto w-full flex justify-between items-center border-b border-white/5">
+        <a href="index.html" class="hover:opacity-80 transition-opacity">
+            <img src="Onebloodlabs-company-title.png" alt="OneBlood Labs" class="h-12 md:h-20 w-auto">
+        </a>
+        <nav class="flex gap-10 text-xs uppercase tracking-[0.2em] font-bold">
+            <a href="index.html" class="hover:text-metallic-gold transition-colors">Home</a>
+            <a href="privacy.html" class="hover:text-metallic-gold transition-colors">Privacy</a>
+            <a href="terms.html" class="text-metallic-gold">Terms</a>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-8 py-20">
+        <div class="flex flex-col items-center mb-16">
+            <img src="Onebloodlabslogo-removebg-preview.png" alt="OneBlood Labs LLC" class="h-32 w-auto mb-6">
+        </div>
+
+        <h1 class="font-serif text-4xl font-normal mb-4 tracking-tight text-ice-white italic text-center">Terms of Service</h1>
+        <p class="text-xs text-white/30 uppercase tracking-widest mb-12 text-center">Last Updated: June 8, 2026</p>
+
+        <section class="space-y-12 text-ice-white">
+            <div class="bg-module-dark p-10 rounded-2xl border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">1. Acceptance of Terms</h2>
+                <p class="text-white/70 leading-relaxed">
+                    By engaging with the engineering services of OneBlood Labs LLC you agree to be bound by these Terms of Service. These terms constitute a legally binding agreement between you and OneBlood Labs LLC regarding the use of our multi-generational preservation infrastructure.
+                </p>
+            </div>
+
+            <div class="bg-module-dark p-10 rounded-2xl border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">2. Infrastructure Governance</h2>
+                <p class="text-white/70 leading-relaxed mb-4">
+                    OneBlood Labs LLC provides a resilient technological framework. Users are responsible for the integrity of the data they ingest into the sanctuary environment.
+                </p>
+                <ul class="text-white/50 text-sm space-y-3 list-disc pl-5">
+                    <li>Data sovereignty remains with the originating user.</li>
+                    <li>Infrastructure access is governed by enterprise-grade IAM protocols.</li>
+                    <li>Multi-region redundancy is employed for disaster recovery.</li>
+                </ul>
+            </div>
+
+            <div class="bg-module-dark p-10 rounded-2xl border border-white/5">
+                <h2 class="text-metallic-gold text-sm font-bold uppercase tracking-widest mb-6">3. Technical Limitations</h2>
+                <p class="text-white/70 leading-relaxed">
+                    While OneBlood Labs LLC utilizes S3 Encrypted Storage and high-availability clusters, digital preservation is an ongoing engineering challenge. We do not guarantee compatibility with all future file formats over an infinite timeline, but we commit to maintaining the underlying bit-level integrity of all preserved objects.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-16 max-w-7xl mx-auto border-t border-white/5 text-center text-xs text-white/20 uppercase tracking-[0.3em]">
+        &copy; 2026 OneBlood Labs LLC
+    </footer>
+</body>
+</html>
